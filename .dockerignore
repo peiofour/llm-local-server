@@ -1,0 +1,64 @@
+# Dépendances et modules
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Fichiers de build et de développement
+dist
+build
+out
+.next
+.npm
+
+# Fichiers de configuration de développement
+.env*
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Fichiers de test et de couverture
+coverage
+.nyc_output
+*.test.ts
+*.spec.ts
+
+# Fichiers système et IDE
+.DS_Store
+.idea
+.vscode
+*.swp
+*.swo
+
+# Logs et caches
+logs
+*.log
+.cache
+.tmp
+
+# Fichiers de documentation et readme
+README.md
+CONTRIBUTING.md
+CHANGELOG.md
+
+# Scripts et configurations de développement
+nodemon.json
+.eslintrc
+.prettierrc
+tsconfig.json
+
+# Volumes et données locales
+ollama-models
+prometheus-data
+grafana-data
+
+# Archives et fichiers temporaires
+*.tar
+*.gz
+*.zip
+
+# Fichiers de lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

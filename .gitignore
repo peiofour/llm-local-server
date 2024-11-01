@@ -1,0 +1,52 @@
+# Dépendances
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+out/
+
+# Environnement et configuration
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+
+# IDE et éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.pem
+
+# Caches et temporaires
+.cache/
+.tmp/
+.next/
+
+# Tests
+coverage/
+.nyc_output/
+
+# Divers
+.npm/
+.eslintcache
+.node_repl_history
+
+# Volumes Docker locaux
+ollama-models/
+prometheus-data/
+grafana-data/
+
+# Fichiers de lock spécifique
