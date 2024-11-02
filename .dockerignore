@@ -46,7 +46,6 @@ CHANGELOG.md
 nodemon.json
 .eslintrc
 .prettierrc
-tsconfig.json
 
 # Volumes et données locales
 ollama-models

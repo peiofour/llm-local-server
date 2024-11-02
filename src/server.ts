@@ -11,6 +11,7 @@ import promBundle from "express-prom-bundle";
 const app = express();
 const port = process.env.PORT || 3000;
 const OLLAMA_HOST = process.env.OLLAMA_HOST || "localhost";
+const model = process.env.DEFAULT_MODEL || "mistral-small";
 
 app.use(bodyParser.json());
 
@@ -56,7 +57,7 @@ app.post(
     res: Response<GenerateResponse>
   ) => {
     try {
-      const { prompt, model = "mistral" } = req.body;
+      const { prompt } = req.body;
 
       const response = await fetchWithTimeout(
         `http://${OLLAMA_HOST}:11434/api/generate`,
@@ -114,8 +115,6 @@ app.get("/health", (req: Request, res: Response) => {
 
 const server = app.listen(port, async () => {
   console.log(`Serveur LLM démarré sur http://localhost:${port}`);
-  const model = process.env.DEFAULT_MODEL || "mistral-small";
-  await pullModel(model);
 });
 
 // Gestion gracieuse de l'arrêt
